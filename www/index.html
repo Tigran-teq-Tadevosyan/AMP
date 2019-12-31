@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html ⚡>
-  <head id="headAmp">
-    <meta charset="utf-8" />
-    <title>Sample document</title>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link
-      rel="canonical"
-      href="https://amp.dev/documentation/examples/components/amp-fx-flying-carpet/index.html"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width,minimum-scale=1,initial-scale=1"
-    />
 
-    <script type="application/ld+json">
+<head id="headAmp">
+  <meta charset="utf-8" />
+  <title>Sample document</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="canonical" href="https://amp.dev/documentation/examples/components/amp-fx-flying-carpet/index.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+
+  <script type="application/ld+json">
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
+        "author": {
+          "@type": "Person",
+          "name": "Hrant Abrahamyan"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "ShellLogix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/static/samples/img/favicon.png",
+            "width": "512",
+            "height": "512"
+          }
+          },
         "headline": "Article headline",
+        "mainEntityOfPage": "http://amp-shelllogix.herokuapp.com/0bc446c0-2bbc-11ea-99e2-3177767a4b73.html",
+        "dateModified": "2019-12-31T10:17:38+00:00",
         "image": ["thumbnail1.jpg"],
-        "datePublished": "2015-02-05T08:00:00+08:00"
+        "datePublished": "2019-12-30T10:17:38+00:00"
       }
     </script>
 
-    <script
-      async
-      custom-element="amp-carousel"
-      src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
-    ></script>
-    <script
-      async
-      custom-element="amp-ad"
-      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-    ></script>
-    <script
-      async
-      custom-element="amp-fx-flying-carpet"
-      src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"
-    ></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  <script async custom-element="amp-fx-flying-carpet"
+    src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script>
 
 
   <style amp-boilerplate>
@@ -107,12 +107,10 @@
         margin: 0 !important;
         padding: 0 !important;
         clip: rect(0, auto, auto, 0) !important;
-        -webkit-clip-path: polygon(
-          0px 0px,
-          100% 0px,
-          100% 100%,
-          0px 100%
-        ) !important;
+        -webkit-clip-path: polygon(0px 0px,
+            100% 0px,
+            100% 100%,
+            0px 100%) !important;
         clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%) !important;
       }
 
@@ -452,6 +450,7 @@
       display: flex;
       align-items: center;
       padding: 15px;
+      margin-right: 28px;
       justify-content: space-between;
     }
 
@@ -498,21 +497,21 @@
           quibusdam
         </p>
       </div>
-    </section>
-    <section id="paralax"></section>
+  </section>
+  <section id="paralax"></section>
 
-    <section>
-      <div class="container d-flex section">
-        <div id="4" class="foto_block foto2 color"></div>
-        <div class="text_block text">
-          <h2 class="text" contenteditable="true">Irina Iriser</h2>
-          <p class="text" contenteditable="true">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            numquam et amet, recusandae reiciendis itaque esse, inventore officiis
-            atque quis tempore? Neque minus laudantium, quia pariatur quibusdam
-          </p>
-        </div>
+  <section>
+    <div class="container d-flex section">
+      <div id="4" class="foto_block foto2 color"></div>
+      <div class="text_block text">
+        <h2 class="text" contenteditable="true">Irina Iriser</h2>
+        <p class="text" contenteditable="true">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+          numquam et amet, recusandae reiciendis itaque esse, inventore officiis
+          atque quis tempore? Neque minus laudantium, quia pariatur quibusdam
+        </p>
       </div>
+    </div>
     </div>
   </section>
   <section>
@@ -534,12 +533,7 @@
       <span>Add Section</span>
     </button>
     <button class="button_save" id="save">save</button>
-    <input
-      class="input"
-      style="display: none;"
-      id="input_paralax"
-      type="file"
-    />
+    <input class="input" style="display: none;" id="input_paralax" type="file" />
   </div>
 
   <footer>
@@ -556,12 +550,13 @@
       </div>
     </div>
   </footer>
-    <div id="inputsContainer">
-      <input class="input" style="display: none;" id="input_1" type="file" />
-      <input class="input" style="display: none;" id="input_2" type="file" />
-      <input class="input" style="display: none;" id="input_3" type="file" />
-      <input class="input" style="display: none;" id="input_4" type="file" />
-    </div>
-    <script id="mainScript" src="main.js"></script>
-  </body>
+  <div id="inputsContainer">
+    <input class="input" style="display: none;" id="input_1" type="file" />
+    <input class="input" style="display: none;" id="input_2" type="file" />
+    <input class="input" style="display: none;" id="input_3" type="file" />
+    <input class="input" style="display: none;" id="input_4" type="file" />
+  </div>
+  <script id="mainScript" src="main.js"></script>
+</body>
+
 </html>

@@ -171,13 +171,29 @@ save.onclick = async () => {
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
   
     <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Article headline",
-        "image": ["thumbnail1.jpg"],
-        "datePublished": "2015-02-05T08:00:00+08:00"
-      }
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "author": {
+        "@type": "Person",
+        "name": "Hrant Abrahamyan"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ShellLogix",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/static/samples/img/favicon.png",
+          "width": "512",
+          "height": "512"
+        }
+        },
+      "headline": "Article headline",
+      "mainEntityOfPage": "http://amp-shelllogix.herokuapp.com/0bc446c0-2bbc-11ea-99e2-3177767a4b73.html",
+      "dateModified": "2019-12-31T10:17:38+00:00",
+      "image": ["thumbnail1.jpg"],
+      "datePublished": "2019-12-30T10:17:38+00:00"
+    }
     </script>
   
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
@@ -502,6 +518,7 @@ save.onclick = async () => {
         display: flex;
         align-items: center;
         padding: 15px;
+        margin-right: 28px;
         justify-content: space-between;
       }
   
