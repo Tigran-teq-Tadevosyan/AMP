@@ -1,5 +1,14 @@
 let file, reader;
 
+var el = document.getElementById('header_title');
+var max = 14;
+el.addEventListener('input', function(e) {
+  if (el.innerHTML.length > max) {
+    el.innerHTML = el.innerHTML.substr(0, max); // just in case
+    // alert('Not allowed more than ' + max + ' characters');
+  }
+});
+
 document.addEventListener("mouseup", function(e) {
   let temp_target = e.target;
   if (temp_target.classList.contains("color")) {
@@ -417,6 +426,11 @@ save.onclick = async () => {
         display: flex;
         align-items: center;
         flex-direction: column;
+      }
+
+      .text {
+        max-width: 100%;
+        word-break: break-word;
       }
   
       footer {
